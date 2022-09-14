@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#banner {
+  width: 100%;
+  height: 550px;
+  background: yellow;
+  position: relative;
+  background-image: url(../images/banner.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+#banner::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  z-index: 5;
+}
+
+#banner .title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+#banner .title h1,
+#banner .title span {
+  color: #fff;
+
+  line-height: 40px;
+}
+
+#banner .title h1 {
+  font-size: 2.5rem;
+}
+
+#banner .title span {
+  opacity: 0.5;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+#nav-bar .container {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  border: 1px solid #f7f7f7;
+}
+
+#nav-bar .container a {
+  padding: 25px 40px;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#nav-bar .container a i {
+  color: #b81515;
+  font-size: 1rem;
+}
+
+#nav-bar .container a:not(:last-child),
+#nav-bar .title {
+  border-right: 1px solid #f7f7f7;
+}
+#nav-bar .container .title {
+  width: 400px;
+  line-height: 25px;
+  padding: 5px 0;
+  white-space: nowrap;
+}
+
+#nav-bar .title h1 {
+  font-size: 1.5rem;
+}
+
+#nav-bar .title span {
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+#nav-bar {
+  text-align: center;
+}
+
+#about .container {
+  display: flex;
+  justify-content: center;
+}
+
+#target {
+  width: 50%;
+  padding: 100px 50px;
+}
+
+#target h1 {
+  padding-bottom: 50px;
+  font-size: 1.8rem;
+}
+
+#target h1 {
+  padding-bottom: 40px;
+  font-size: 1.8rem;
+}
+#target p {
+  font-size: 0.9rem;
+  line-height: 20px;
+  color: #7e7878;
+}
+
+#personal-info {
+  padding: 100px 50px;
+  width: 50%;
+  background: #eeeeee;
+}
+
+#personal-info h1 {
+  padding-bottom: 40px;
+  font-size: 1.8rem;
+}
+
+#personal-info ul li {
+  list-style: none;
+  font-size: 0.9rem;
+  line-height: 30px;
+  color: #7e7878;
+}
+
+#personal-info span {
+  color: #000;
+}
+/* KINH NGHIỆM  */
+#job-info .container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #fff;
+  padding: 10px;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.nam1 {
+  border: 1px solid #d4c0c0;
+}
+
+#job-info .nam1 h1,
+#job-info .nam1 ul {
+  padding: 20px 40px;
+}
+.nam2 {
+  list-style: none;
+}
+
+#job-info .nam1 h1 i {
+  font-size: px;
+}
+.interestas-icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.interestas-icon p {
+  display: inline-block;
+}
+
+.interestas-icon i {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #d4c0c0;
+  border-radius: 50%;
+  padding: 15px 15px;
+}
+
+.interestas-icon p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.good {
+  background-color: #b81515;
+  display: inline-block;
+  height: 2px;
+  width: 40px;
+}
+.bad {
+  background-color: #eeeeee;
+  display: inline-block;
+  height: 2px;
+  width: 40px;
+}
+/* chung chi */
+.img-cc {
+  width: 240px;
+  margin-right: 10px;
+}
+#certificate .cer-grid {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  padding: 10px;
+  row-gap: 40px;
+}
+.cer-grid img {
+  float: left;
+}
+.section-title {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.img-cv {
+  padding-left: 20px;
+  border-left: 2px solid #d6c08d;
+}
+.cer-grid > div:not(:last-child) {
+  padding-bottom: 40px;
+  border-bottom: 2px solid #d6c08d;
+}
+
+/* project */
+
+.project-flex {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 25px;
+}
+.project-flex table {
+  border-collapse: collapse;
+}
+.project-flex table tr {
+  border: 1px solid #dddddd;
+  height: 50px;
+}
+.project-flex h5 {
+  word-wrap: normal;
+}
+.project-flex td:nth-child(odd) {
+  width: 100px;
+}
+
+.project-flex tr {
+  padding: 20px 0;
+}
+/* mang xa hoi */
+.social-icon {
+  width: 30%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  list-style: none;
+  padding: 30px 0;
+}
+
+.social-icon li i {
+  color: #b81515;
+  padding: 0 5px;
+  font-size: 25px;
+}
+/* chỉnh sửa */
+
+#project,
+#job-info {
+  margin-bottom: 50px;
+}
+#certificate {
+  padding-bottom: 50px;
+}
+.project-flex table span,
+.nam3 span {
+  background: #b81515;
+  border-radius: 10px;
+  color: #fff;
+  padding: 0 5px;
+}
+.nam1 h1 {
+  position: relative;
+}
+.nam1 h1 i {
+  position: absolute;
+  right: 20px;
+  font-size: 2rem;
+}
+.nam1 li {
+  color: #b81515;
+}
+.nam1 li p {
+  color: #000;
+}
